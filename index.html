@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMS Order Report Downloader</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">C</div>
+      <p class="eyebrow">CAMS · REPORTING PORTAL</p>
+      <h1>Order Report</h1>
+      <p class="subtitle">
+        Generate and download your order report for any date range.
+      </p>
+    </header>
+
+    <form id="reportForm">
+      <div class="field">
+        <label for="fromDate">Start date</label>
+        <input type="date" id="fromDate" required>
+      </div>
+
+      <div class="field">
+        <label for="toDate">End date</label>
+        <input type="date" id="toDate" required>
+      </div>
+
+      <button type="submit" id="downloadBtn">
+        <span id="buttonText">Generate & Download Report</span>
+      </button>
+    </form>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+
+    <footer>
+      <span class="dot"></span>
+      CAMS UAT Environment
+    </footer>
+  </main>
+</body>
+</html>
